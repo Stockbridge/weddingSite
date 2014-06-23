@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Event Name</th>
+      <th>Date</th>
+      <th>Venue</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="event in events | orderBy:'name'">
+      <td>{{event.name}}</td>
+      <td>{{event.date}}</td>
+      <td>{{event.venue.name}}</td>
+      <td>{{event.venue.city}}</td>
+      <td>{{event.venue.state}}</td>
+      <td><span ng-click="removeEvent()">remove</span>/<span ng-click="editEvent()">edit</a></td>
+    </tr>
+  </tbody>
+</table>
