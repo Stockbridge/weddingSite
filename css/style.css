@@ -1,5 +1,5 @@
 
-/* line 197 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 208 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 
 /* line 1 : /usr/local/lib/node_modules/stylus/lib/functions/index.styl */
 
@@ -91,3 +91,7 @@ html{background:url("../img/bgImage.jpg") no-repeat center;background-size:cover
 .location{font-size:3rem}
 /* line 193 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .more-info{font-size:2rem}}
+/* line 199 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+@-moz-document url-prefix(''){@media all and (min-width: 800px){
+/* line 201 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.frame{width:398px;background-size:contain;background-position:top}}}
