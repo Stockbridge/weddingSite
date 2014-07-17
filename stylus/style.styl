@@ -32,21 +32,74 @@ light = 300;
 normal = 500;
 bold = 600;
 
+/* - - - FRAMEWORK - - - */
 html {
   font-size: 10px;
-  border-top: 3rem solid darkColor;
   background: azure;
   color: darkColor;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   min-width: 330px;
 }
 
+body {
+  padding-top: 4rem;
+}
+
 .constrainer {
   width: 100%;
   max-width: 100rem;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   text-align: center;
 }
+
+/* - - - HEADER - - - */
+.global-header {
+  height: 5rem;
+  background: #070726;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+
+  .constrainer {
+    text-align: left;
+    position: relative;
+    padding-top: 0;
+  }
+
+  nav {
+    text-align: left;
+    display: inline-block;
+    padding-top: 1.3rem;
+    padding-left: 2rem;
+
+    li {
+      display: inline-block;
+      font-size: 2.3rem;
+      margin-right: 6rem;
+      
+      a {
+        text-decoration: none;
+        color: lightColor;
+        font-weight: 300;
+      }
+    } 
+  }
+
+  .stamp {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    margin-left: -7.5rem;
+    margin-top: 1rem;
+    right: 20%;
+    z-index: 1;
+  }
+}
+
+/* - - - PAGE LEVEL - - - */
 .frame {
   background: url('../img/frame.png') no-repeat center;
   background-size: cover;
@@ -57,14 +110,6 @@ html {
   position: relative;
   box-sizing: border-box;
   min-height: 60rem;
-}
-.stamp {
-  position: absolute;
-  width: 15rem;
-  height: 15rem;
-  margin-left: -7.5rem;
-  top: -10%;
-  left: 50%;
 }
 
 .names, .date-container {
@@ -137,7 +182,7 @@ html {
 }
 
 @media all and (min-width: 800px) {
-   html {
+   #landing-page {
     background: url('../img/bgImage.jpg') no-repeat center;
     background-size: cover;
     padding-bottom: 5rem;
@@ -149,10 +194,6 @@ html {
 }
 
 @media all and (min-width: 500px) {
-  .constrainer {
-    margin-top: 5rem;
-  }
-
   .frame {
     width: 55rem;
     height: 70rem;
