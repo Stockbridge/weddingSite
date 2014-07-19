@@ -27,6 +27,7 @@ table {
 /* - - - VARIABLES - - - */
 lightColor = #f5e6d2;
 darkColor = #070726;
+midDarkColor = #462F1B;
 
 light = 300;
 normal = 500;
@@ -41,22 +42,16 @@ html {
   min-width: 330px;
 }
 
-body {
-  padding-top: 4rem;
-}
-
 .constrainer {
   width: 100%;
   max-width: 100rem;
   margin: 0 auto;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
   text-align: center;
 }
 
 /* - - - HEADER - - - */
 .global-header {
-  height: 5rem;
+  height: 6rem;
   background: #070726;
   position: fixed;
   width: 100%;
@@ -64,26 +59,27 @@ body {
   top: 0;
 
   .constrainer {
-    text-align: left;
+    text-align: center;
     position: relative;
     padding-top: 0;
   }
 
   nav {
-    text-align: left;
     display: inline-block;
     padding-top: 1.3rem;
-    padding-left: 2rem;
 
     li {
       display: inline-block;
       font-size: 2.3rem;
-      margin-right: 6rem;
+      margin-right: 2rem;
       
       a {
         text-decoration: none;
         color: lightColor;
         font-weight: 300;
+      }
+      &:last-child{
+        margin-right: 0;
       }
     } 
   }
@@ -92,17 +88,15 @@ body {
     position: absolute;
     width: 15rem;
     height: 15rem;
-    margin-left: -7.5rem;
-    margin-top: 1rem;
-    right: 20%;
+    margin-right: -7.5rem;
+    right: 50%;
+    margin-top: 4.5rem;
     z-index: 1;
   }
 }
 
-/* - - - PAGE LEVEL - - - */
+/* - - - PAGE ITEM - - - */
 .frame {
-  background: url('../img/frame.png') no-repeat center;
-  background-size: cover;
   width: 100%;
   display: inline-block;
   text-align: center;
@@ -110,6 +104,16 @@ body {
   position: relative;
   box-sizing: border-box;
   min-height: 60rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 2.5rem;
+  
+  strong {
+    display: block;
+  }
 }
 
 .names, .date-container {
@@ -181,22 +185,99 @@ body {
   padding-top: 2rem;
 }
 
+/* - - - PAGE OVERRIDES - - - */
+#landing-page {
+  padding-top: 4rem;
+
+  .constrainer {
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+  }
+  .frame {
+    background: url('../img/frame.png') no-repeat center;
+    background-size: cover;
+  }
+}
+
+#wedding-page {
+  .frame {
+    padding: 22rem 6rem 17rem;
+    color: lightColor;
+    background-color: darkColor;
+    opacity: .6;
+  }
+}
+
+#registry-page {
+  .frame {
+    padding-top: 22rem;
+    color: lightColor;
+    background-color: midDarkColor;
+    opacity: .6;
+  }
+  p {
+    font-size: 2.1rem;
+  }
+}
+
+/* - - - MEDIA QUERIES - - - */
 @media all and (min-width: 800px) {
-   #landing-page {
+  #landing-page {
     background: url('../img/bgImage.jpg') no-repeat center;
     background-size: cover;
     padding-bottom: 5rem;
+
+    .constrainer {
+      padding-top: 4rem;
+    }
+    .frame {
+      height: 70rem;
+    }
+  }
+
+  #wedding-page {
+    background: url('../img/bgWedding.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  #registry-page {
+    background: url('../img/bgRegistry.jpg') no-repeat center;
+    background-size: cover;
   }
 
   .constrainer {
     text-align: right;
+  }
+
+  .global-header {
+    height: 5rem;
+
+    .constrainer {
+      text-align: left;
+      padding-left: 2rem;
+    }
+    .stamp {
+      right: 32%;
+      margin-top: 1rem;
+    }
+    nav li {
+      margin-right: 6rem;
+    }
+  } 
+}
+
+@media all and (min-width: 1000px) {
+  .global-header {
+    .stamp {
+      right: 27%;
+    } 
   }
 }
 
 @media all and (min-width: 500px) {
   .frame {
     width: 55rem;
-    height: 70rem;
+    height: 90rem;
     padding: 10rem 8rem 17rem;
   }
 

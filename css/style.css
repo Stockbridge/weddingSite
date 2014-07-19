@@ -1,5 +1,5 @@
 
-/* line 249 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 330 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 
 /* line 1 : /usr/local/lib/node_modules/stylus/lib/functions/index.styl */
 
@@ -21,93 +21,139 @@ blockquote:before,blockquote:after,q:before,q:after{content:none}
 table{border-collapse:collapse;border-spacing:0}
 /* line 27 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 
-/* line 35 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-
 /* line 36 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+
+/* line 37 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 html{font-size:10px;background:#f0ffff;color:#070726;font-family:'Raleway',Helvetica,Arial,sans-serif;min-width:330px}
-/* line 44 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-body{padding-top:4rem}
-/* line 48 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.constrainer{width:100%;max-width:100rem;margin:0 auto;padding-top:4rem;padding-bottom:4rem;text-align:center}
-/* line 57 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 45 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.constrainer{width:100%;max-width:100rem;margin:0 auto;text-align:center}
+/* line 52 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 
-/* line 58 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.global-header{height:5rem;background:#070726;position:fixed;width:100%;z-index:1;top:0;}
-/* line 66 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.global-header .constrainer{text-align:left;position:relative;padding-top:0}
-/* line 72 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.global-header nav{text-align:left;display:inline-block;padding-top:1.3rem;padding-left:2rem;}
-/* line 78 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.global-header nav li{display:inline-block;font-size:2.3rem;margin-right:6rem;}
-/* line 83 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 53 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.global-header{height:6rem;background:#070726;position:fixed;width:100%;z-index:1;top:0;}
+/* line 61 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.global-header .constrainer{text-align:center;position:relative;padding-top:0}
+/* line 67 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.global-header nav{display:inline-block;padding-top:1.3rem;}
+/* line 71 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.global-header nav li{display:inline-block;font-size:2.3rem;margin-right:2rem;}
+/* line 76 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .global-header nav li a{text-decoration:none;color:#f5e6d2;font-weight:300}
-/* line 91 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.global-header .stamp{position:absolute;width:15rem;height:15rem;margin-left:-7.5rem;margin-top:1rem;right:20%;z-index:1}
-/* line 102 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 81 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.global-header nav li:last-child{margin-right:0}
+/* line 87 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.global-header .stamp{position:absolute;width:15rem;height:15rem;margin-right:-7.5rem;right:50%;margin-top:4.5rem;z-index:1}
+/* line 98 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 
-/* line 103 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.frame{background:url("../img/frame.png") no-repeat center;background-size:cover;width:100%;display:inline-block;text-align:center;padding:13rem 6rem;position:relative;box-sizing:border-box;min-height:60rem}
-/* line 115 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.names,.date-container{font-family:'Arvo','Palatino Linotype',Palatino,serif}
+/* line 99 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.frame{width:100%;display:inline-block;text-align:center;padding:13rem 6rem;position:relative;box-sizing:border-box;min-height:60rem}
+/* line 109 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+p{font-size:1.8rem;line-height:2.4rem;margin-bottom:2.5rem;}
+/* line 114 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+p strong{display:block}
 /* line 119 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.names,.date-container{font-family:'Arvo','Palatino Linotype',Palatino,serif}
+/* line 123 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .names{font-size:2.5rem}
-/* line 122 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 126 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .purpose{font-size:2.3rem;font-weight:300;margin-bottom:1rem}
-/* line 128 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 132 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .date-container{border-top:.5rem solid #070726;padding-top:1rem}
-/* line 133 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.day-month-container,.year{display:inline-block;vertical-align:top}
 /* line 137 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.day-month-container{width:65%;text-align:left}
+.day-month-container,.year{display:inline-block;vertical-align:top}
 /* line 141 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.day-month-container{width:65%;text-align:left}
+/* line 145 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .day{font-size:3rem}
-/* line 144 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.number{font-size:4.5rem;line-height:6rem}
 /* line 148 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.of{font-size:2.5rem;padding-left:.7rem}
+.number{font-size:4.5rem;line-height:6rem}
 /* line 152 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.month{font-size:2.6rem;line-height:3rem}
+.of{font-size:2.5rem;padding-left:.7rem}
 /* line 156 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.month{font-size:2.6rem;line-height:3rem}
+/* line 160 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .year{width:30%;border-left:2px solid #070726;font-size:5rem;line-height:4.5rem;padding-left:2%}
-/* line 163 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 167 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .separator{font-size:2rem;margin-top:1rem;}
-/* line 166 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 170 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .separator .bar{display:inline-block;width:40%;border-top:1px solid #070726;vertical-align:middle}
-/* line 173 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 177 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .location{font-size:1.8rem;font-weight:300;padding-top:1rem}
-/* line 178 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 182 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .more-info{font-size:1.5rem;font-weight:300;padding-top:2rem}
-/* line 184 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-@media all and (min-width: 800px){
-/* line 185 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-#landing-page{background:url("../img/bgImage.jpg") no-repeat center;background-size:cover;padding-bottom:5rem}
-/* line 191 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.constrainer{text-align:right}}
+/* line 188 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+
+/* line 189 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+#landing-page{padding-top:4rem;}
+/* line 192 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+#landing-page .constrainer{padding-top:6rem;padding-bottom:10rem}
 /* line 196 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-@media all and (min-width: 500px){
-/* line 197 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.frame{width:55rem;height:70rem;padding:10rem 8rem 17rem}
+#landing-page .frame{background:url("../img/frame.png") no-repeat center;background-size:cover}
+/* line 202 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+
 /* line 203 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.names{font-size:4.8rem}
-/* line 206 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.purpose{font-size:4.35rem}
-/* line 209 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.day{font-size:6rem}
+#wedding-page .frame{padding:22rem 6rem 17rem;color:#f5e6d2;background-color:#070726;opacity:.6}
+/* line 211 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+
 /* line 212 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.number{font-size:8rem;line-height:8rem}
-/* line 216 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.of{font-size:4rem;padding-left:2rem}
-/* line 220 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
-.month{font-size:4.7rem;line-height:5rem}
+#registry-page .frame{padding-top:22rem;color:#f5e6d2;background-color:#462f1b;opacity:.6}
+/* line 218 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+#registry-page p{font-size:2.1rem}
+/* line 223 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+
 /* line 224 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+@media all and (min-width: 800px){
+/* line 225 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+#landing-page{background:url("../img/bgImage.jpg") no-repeat center;background-size:cover;padding-bottom:5rem;}
+/* line 230 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+#landing-page .constrainer{padding-top:4rem}
+/* line 233 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+#landing-page .frame{height:70rem}
+/* line 238 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+#wedding-page{background:url("../img/bgWedding.jpg") no-repeat center;background-size:cover}
+/* line 243 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+#registry-page{background:url("../img/bgRegistry.jpg") no-repeat center;background-size:cover}
+/* line 248 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.constrainer{text-align:right}
+/* line 252 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.global-header{height:5rem;}
+/* line 255 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.global-header .constrainer{text-align:left;padding-left:2rem}
+/* line 259 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.global-header .stamp{right:32%;margin-top:1rem}
+/* line 263 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.global-header nav li{margin-right:6rem}}
+/* line 269 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+@media all and (min-width: 1000px){
+/* line 270 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+
+/* line 271 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.global-header .stamp{right:27%}}
+/* line 277 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+@media all and (min-width: 500px){
+/* line 278 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.frame{width:55rem;height:90rem;padding:10rem 8rem 17rem}
+/* line 284 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.names{font-size:4.8rem}
+/* line 287 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.purpose{font-size:4.35rem}
+/* line 290 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.day{font-size:6rem}
+/* line 293 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.number{font-size:8rem;line-height:8rem}
+/* line 297 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.of{font-size:4rem;padding-left:2rem}
+/* line 301 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+.month{font-size:4.7rem;line-height:5rem}
+/* line 305 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .year{font-size:7.5rem;line-height:6.5rem}
-/* line 228 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 309 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .separator{font-size:4rem}
-/* line 231 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 312 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .location{font-size:3rem}
-/* line 234 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 315 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .more-info{font-size:2rem}}
-/* line 240 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 321 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 @-moz-document url-prefix(''){@media all and (min-width: 800px){
-/* line 242 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
+/* line 323 : /Users/stocky/Clients/Stocky/weddingSite/stylus/style.styl */
 .frame{width:398px;background-size:contain;background-position:top}}}
