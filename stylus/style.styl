@@ -29,6 +29,8 @@ lightColor = #f5e6d2;
 darkColor = #070726;
 midDarkColor = #462F1B;
 
+accentColor = #b87f1d;
+
 light = 300;
 normal = 500;
 bold = 600;
@@ -47,6 +49,10 @@ html {
   max-width: 100rem;
   margin: 0 auto;
   text-align: center;
+}
+
+.hide {
+  display: none;
 }
 
 /* - - - HEADER - - - */
@@ -76,7 +82,7 @@ html {
       a {
         text-decoration: none;
         color: lightColor;
-        font-weight: 300;
+        font-weight: light;
       }
       &:last-child{
         margin-right: 0;
@@ -86,6 +92,7 @@ html {
 
   .stamp {
     position: absolute;
+    display: inline-block;
     width: 15rem;
     height: 15rem;
     margin-right: -7.5rem;
@@ -103,6 +110,7 @@ html {
   padding: 13rem 6rem;
   position: relative;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   min-height: 60rem;
 }
 
@@ -113,9 +121,11 @@ p {
   
   strong {
     display: block;
+    font-weight: bold;
   }
 }
 
+/* - - - LANDING PAGE TYPOGRAPHY - - - */
 .names, .date-container {
   font-family: 'Arvo', 'Palatino Linotype', Palatino, serif;
 }
@@ -125,7 +135,7 @@ p {
 }
 .purpose {
   font-size: 2.3rem;
-  font-weight: 300;
+  font-weight: light;
   margin-bottom: 1rem;
 }
 
@@ -176,12 +186,12 @@ p {
 }
 .location {
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: light;
   padding-top: 1rem;
 }
 .more-info {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: light;
   padding-top: 2rem;
 }
 
@@ -203,8 +213,43 @@ p {
   .frame {
     padding: 22rem 6rem 17rem;
     color: lightColor;
-    background-color: darkColor;
-    opacity: .6;
+    background-color: rgba(darkColor, .7);
+  }
+  p {
+    font-weight: light;
+  }
+  .switch-content {
+    position: relative;
+    min-height: 55rem;
+  }
+  a {
+    position: absolute;
+    font-size: 2.3rem;
+    color: accentColor;
+    text-decoration: none;
+    bottom: -5rem;
+    cursor: pointer;
+  }
+  .location-section a {
+    right: 0;
+  }
+  .schedule-section {
+    p {
+      font-size: 2.3rem;
+      margin-bottom: 4rem;
+    }
+    strong {
+      display: inline-block;
+    }
+    p > span {
+      display: block;
+      font-size: 1.6rem;
+      margin-top: 1rem;
+      line-height: 1.8rem;
+    }
+    a {
+      left: 0;
+    }  
   }
 }
 
@@ -212,8 +257,7 @@ p {
   .frame {
     padding-top: 22rem;
     color: lightColor;
-    background-color: midDarkColor;
-    opacity: .6;
+    background-color: rgba(midDarkColor, .7);
   }
   p {
     font-size: 2.1rem;
@@ -314,16 +358,5 @@ p {
   }
   .more-info {
     font-size: 2rem;
-  }
-}
-
-
-@-moz-document url-prefix('') {
-  @media all and (min-width: 800px) {
-    .frame {
-      width: 398px;
-      background-size: contain;
-      background-position: top;
-    }
   }
 }
