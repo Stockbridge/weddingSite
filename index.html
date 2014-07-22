@@ -45,6 +45,11 @@
 		</section>
 		<section id="wedding-page" class="page">
 			<div class="constrainer">
+				<div class="title">
+					<h1>The Wedding</h1>
+					<h2 class="page-title">Location &amp; Hotel</h2>
+					<h2 class="page-title hide">Schedule</h2>
+				</div>
 				<div class="frame">
 					<div class="switch-content location-section">
 						<p>The ceremony and reception <br> will take place at</p>
@@ -63,7 +68,7 @@
 						<p><strong>5:30pm</strong> Cocktails and lawngames
 							<span>Horsd'oeuvres, Cocktails and mingling</span>
 						</p>
-						<p><strong>6:30pm </strong> Family Style Dinner
+						<p><strong>6:30pm</strong> Family Style Dinner
 							<span>Seated dinner with passed <br> and shared plates</span>
 						</p>
 						<p><strong>10:30pm</strong> Last Call</p>
@@ -74,12 +79,15 @@
 		</section>
 		<section id="registry-page" class="page">
 			<div class="constrainer">
+				<div class="title">
+					<h1>Gift Registry</h1>
+				</div>
 				<div class="frame">
 					<p>We are registered for gifts <br> at the following:</p>
-					<p><strong>www.myregistry.com</strong></p>
+					<p><a href="http://www.myregistry.com/wedding-registry/Amanda-Senn-Chris-Stockbridge-Chicago-IL/669150" title="My Registry"><strong>www.myregistry.com</strong></a></p>
 					<p>Here you can view items that we have selected from various stores, or donate to our honeymoon fund.</p>
 					<p>We are also registered at<p>
-					<p><strong>Bed Bath and Beyond<strong></p>
+					<p><a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541168256&pwsurl=" title="Bed Bath and Beyond Registry"><strong>Bed Bath and Beyond<strong></a></p>
 				</div>
 			</div>
 		</section>
@@ -102,7 +110,9 @@
 		$('.switch-content a').on('click', function(){
 			$('.switch-content a').each(function(){
 				$(this).parent('.switch-content').toggleClass('hide');
-			})
+			});
+
+			$('#wedding-page .page-title').toggleClass('hide');
 		})
 	</script>
 </html>
