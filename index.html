@@ -4,8 +4,8 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Arvo|Raleway:300,400,500' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="js/modernizr.custom.82652.js"></script>
 		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script src="js/modernizr.custom.82652.js"></script>
 		<title>Amanda and Stocky</title>
 	</head>
 	<body>
@@ -91,28 +91,6 @@
 				</div>
 			</div>
 		</section>
+		<script src="js/script.js"></script>
 	</body>
-	<script type="text/javascript">
-		$('a[href^="#"]').each(function(){
-			$(this).on('click', function(){
-				var target = $(this.hash);
-
-				if (target.length) {
-			        $('html,body').animate({
-			          scrollTop: target.offset().top
-			        }, 700);
-
-			        return false;
-      			}
-			})
-		});
-
-		$('.switch-content a').on('click', function(){
-			$('.switch-content a').each(function(){
-				$(this).parent('.switch-content').toggleClass('hide');
-			});
-
-			$('#wedding-page .page-title').toggleClass('hide');
-		})
-	</script>
 </html>
