@@ -136,7 +136,17 @@ html {
     display: inline-block;
   }
 }
+a {
+  text-decoration: none;
+  color: darken(lightColor, 10%);
 
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: darken(lightColor, 20%);
+  }
+}
 p {
   font-size: 1.8rem;
   line-height: 2.4rem;
@@ -254,7 +264,10 @@ p {
     bottom: -5rem;
     cursor: pointer;
   }
-  .location-section a {
+  #location-link {
+    right: 0;
+  }
+  #schedule-link {
     right: 0;
   }
   .schedule-section {
@@ -282,18 +295,6 @@ p {
     padding-top: 20rem;
     color: lightColor;
     background-color: rgba(midDarkColor, .7);
-    
-    a {
-      text-decoration: none;
-      color: lightColor;
-
-      &:hover {
-        text-decoration: underline;
-      }
-      &:visited {
-        color: lightColor;
-      }
-    }
   }
 
   p {
