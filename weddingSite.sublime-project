@@ -2,7 +2,12 @@
 	"folders":
 	[
 		{
-			"path": "/Users/stocky/Clients/Stocky/weddingSite"
+			"follow_symlinks": true,
+			"path": "/Users/stocky/Clients/Stocky/beerdid"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "."
 		}
 	]
 }
